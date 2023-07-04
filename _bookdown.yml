@@ -1,0 +1,25 @@
+book_filename: "bookdown-tr-demo"
+delete_merged_file: true
+repo: https://github.com/htastan/bookdown-sablon-tr
+output_dir: docs
+rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Literatur.Rmd", "03-Yontem.Rmd", "04-Sonuclar.Rmd", "05-Degerlendirme.Rmd"]
+#rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Literatur.Rmd", "03-Yontem.Rmd", "04-Sonuclar.Rmd", "05-Degerlendirme.Rmd"]
+language:
+  label:
+    fig: 'Şekil '
+    tab: 'Tablo '
+    eq: 'Denklem '
+    thm: 'Teorem '
+    lem: 'Lemma '
+    cor: 'Corollary '
+    prp: 'Önerme '
+    cnj: 'Conjecture '
+    def: 'Tanım '
+    exm: 'Örnek '
+    exr: 'Alıştırma '
+    hyp: 'Hipotez '
+    proof: 'Kanıt. '
+    remark: 'Remark. '
+    solution: 'Çözüm. '
+  ui:
+    chapter_name: "Bölüm "
