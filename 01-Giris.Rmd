@@ -1,29 +1,18 @@
 # Giriş {#giris}
 
+
+- Bölümler (`#`) ile başlayan bir başlığı sahip olmalıdır ve ayrı .Rmd dosyaları olarak saklanmalıdır.
+
 - Bölüm ve alt bölümleri etiketlemek için `{#etiket}` kullanılabilir. 
 
-- Bu etiketlere referans vermek için: bkz. Bölüm \@ref(giris) kullanılabilir.  
+- Bu etiketlere referans vermek için: bkz. Bölüm \@ref(giris) kullanılabilir.
 
-- Şekil ve Tablo oluşturmak için `figure` ve `table` ortamları kullanılabilir.
 
-- Şekil örneği: 
+## Alt Bölüm
 
-```{r nice-fig, fig.cap='Örnek Şekil', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+Tüm alt bölümler (`##`) ile başlayan ikinci düzeyde başlığa sahiptir.  
 
-- Şekillere referans vermek için `fig:` öneki kullanılabilir, örneğin yukarıdaki şekle referans vermek için: bkz. Şekil (\@ref(fig:nice-fig)). 
+### Numarasız Bölüm {-}
 
-- Tablo örneği: 
+Bölüm ve alt bölümlere numara vermek istemiyorsak başlığın sonunda `{-}` eklenebilir (yukarıda olduğu gibi).
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(mtcars, 10), caption = 'Örnek Tablo',
-  booktabs = TRUE
-)
-```
-
-- Tabloya referans vermek için: bkz. Tablo (\@ref(tab:nice-tab)).
-
-<!-- - Referans vermek için örnek:  **bookdown** paketi [@R-bookdown] R Markdown **knitr** paketlerini kullanır [@xie2015], [@R-knitr]. -->

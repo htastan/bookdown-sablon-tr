@@ -2,8 +2,9 @@ book_filename: "bookdown-tr-demo"
 delete_merged_file: true
 repo: https://github.com/htastan/bookdown-sablon-tr
 output_dir: docs
-rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Literatur.Rmd", "03-Yontem.Rmd", "04-Sonuclar.Rmd", "05-Degerlendirme.Rmd"]
-#rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Literatur.Rmd", "03-Yontem.Rmd", "04-Sonuclar.Rmd", "05-Degerlendirme.Rmd"]
+rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Capraz-refs.Rmd", "03-Kisimlar.Rmd",
+"04-Referanslar.Rmd", "05-Bloklar.Rmd", "06-Paylasim.Rmd", "07-Kaynaklar.Rmd",
+"08-Ek.Rmd"]
 language:
   label:
     fig: 'Şekil '
@@ -22,4 +23,6 @@ language:
     remark: 'Remark. '
     solution: 'Çözüm. '
   ui:
+    edit: Edit
     chapter_name: "Bölüm "
+    appendix_name: 'Ek '

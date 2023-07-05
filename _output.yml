@@ -10,6 +10,8 @@ bookdown::gitbook:
         <li><a href="https://github.com/htastan">Hüseyin Taştan</a></li>
       after: |
         <li><a href="" target="blank">Bookdown ile Türkçe Kitap Şablonu</a></li>
+    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+#    download: ["pdf", "epub"]
     download: no
     fontsettings:
       theme: white
@@ -31,3 +33,4 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
+

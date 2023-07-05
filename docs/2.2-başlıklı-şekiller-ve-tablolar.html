@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bölüm 1 Giriş | Bookdown ile Türkçe Kitap Şablonu</title>
-  <meta name="description" content="Bölüm 1 Giriş | Bookdown ile Türkçe Kitap Şablonu" />
+  <title>2.2 Başlıklı Şekiller ve Tablolar | Bookdown ile Türkçe Kitap Şablonu</title>
+  <meta name="description" content="2.2 Başlıklı Şekiller ve Tablolar | Bookdown ile Türkçe Kitap Şablonu" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Bölüm 1 Giriş | Bookdown ile Türkçe Kitap Şablonu" />
+  <meta property="og:title" content="2.2 Başlıklı Şekiller ve Tablolar | Bookdown ile Türkçe Kitap Şablonu" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="htastan/bookdown-sablon-tr" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bölüm 1 Giriş | Bookdown ile Türkçe Kitap Şablonu" />
+  <meta name="twitter:title" content="2.2 Başlıklı Şekiller ve Tablolar | Bookdown ile Türkçe Kitap Şablonu" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="kitabın-gözden-geçirilmesi.html"/>
-<link rel="next" href="1.1-alt-bölüm.html"/>
+<link rel="prev" href="2.1-bölümler-ve-alt-bölümler.html"/>
+<link rel="next" href="3-kısımlar.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -202,21 +202,139 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="giris" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Bölüm 1</span> Giriş<a href="1-giris.html#giris" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="başlıklı-şekiller-ve-tablolar" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Başlıklı Şekiller ve Tablolar<a href="2.2-başlıklı-şekiller-ve-tablolar.html#başlıklı-şekiller-ve-tablolar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><p>Bölümler (<code>#</code>) ile başlayan bir başlığı sahip olmalıdır ve ayrı .Rmd dosyaları olarak saklanmalıdır.</p></li>
-<li><p>Bölüm ve alt bölümleri etiketlemek için <code>{#etiket}</code> kullanılabilir.</p></li>
-<li><p>Bu etiketlere referans vermek için: bkz. Bölüm <a href="1-giris.html#giris">1</a> kullanılabilir.</p></li>
+<li><p>Şekil ve Tablo oluşturmak için <code>figure</code> ve <code>table</code> ortamları kullanılabilir.</p></li>
+<li><p>Şekil örneği:</p></li>
 </ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb3-1" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
+<span id="cb3-2"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb3-2" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:nice-fig"></span>
+<img src="bookdown-tr-demo_files/figure-html/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="80%" />
+<p class="caption">
+Şekil 2.1: Örnek Şekil
+</p>
 </div>
+<ul>
+<li><p>Şekillere referans vermek için <code>fig:</code> öneki kullanılabilir, örneğin yukarıdaki şekle referans vermek için: bkz. Şekil (<a href="2.2-başlıklı-şekiller-ve-tablolar.html#fig:nice-fig">2.1</a>).</p></li>
+<li><p>Tablo örneği:</p></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb4-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb4-2"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb4-2" tabindex="-1"></a>  <span class="fu">head</span>(mtcars[,<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>], <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">&#39;Örnek Tablo&#39;</span>,</span>
+<span id="cb4-3"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb4-3" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
+<span id="cb4-4"><a href="2.2-başlıklı-şekiller-ve-tablolar.html#cb4-4" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption><span id="tab:nice-tab">Tablo 2.1: </span>Örnek Tablo</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+</tr>
+<tr class="even">
+<td align="left">Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+</tr>
+<tr class="odd">
+<td align="left">Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108.0</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+</tr>
+<tr class="even">
+<td align="left">Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+</tr>
+<tr class="odd">
+<td align="left">Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+</tr>
+<tr class="even">
+<td align="left">Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+</tr>
+<tr class="odd">
+<td align="left">Duster 360</td>
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+</tr>
+<tr class="even">
+<td align="left">Merc 240D</td>
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+</tr>
+<tr class="odd">
+<td align="left">Merc 230</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">140.8</td>
+<td align="right">95</td>
+<td align="right">3.92</td>
+</tr>
+<tr class="even">
+<td align="left">Merc 280</td>
+<td align="right">19.2</td>
+<td align="right">6</td>
+<td align="right">167.6</td>
+<td align="right">123</td>
+<td align="right">3.92</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Tabloya referans vermek için: bkz. Tablo (<a href="2.2-başlıklı-şekiller-ve-tablolar.html#tab:nice-tab">2.1</a>).</li>
+</ul>
+
+</div>
+<!-- </div> -->
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="kitabın-gözden-geçirilmesi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="1.1-alt-bölüm.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="2.1-bölümler-ve-alt-bölümler.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="3-kısımlar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -247,7 +365,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-Giris.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-Capraz-refs.Rmd",
 "text": "Edit"
 },
 "history": {

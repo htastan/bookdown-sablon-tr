@@ -1,0 +1,41 @@
+# Çapraz Referanslar {#capraz}
+
+Çapraz referanslar kullanılarak okuyucuların bölüm, alt bölüm, şekil, tablo gibi referanslara daha kolay ulaşmaları sağlanabilir.  
+
+## Bölümler ve alt bölümler 
+
+Başlıklara referans vermek için: 
+
+1. Önce başlığa bir etiket verin: `# Bölüm Başlığı {#etiket}`. 
+    - Otomatik etiket oluşturulmasını istiyorsak etiketi boş bırakabiliriz: örneğin, `# Hello world` = `# Hello world {#hello-world}`.
+    - Numarasız başlıklar için: `# Hello world {-#nice-label}` ya da  `{# Hello world .unnumbered}`.
+
+1. Daha sonra, metnin içinde ilgili başlığa referans vermek için `\@ref(etiket)` kullanılabilir; Örneğin: bunun için bkz. Bölüm \@ref(capraz) ve Bölüm \@ref(giris). 
+    - Numara yerine metin kullanmak istersek: [detaylar için bu bölüme bakınız](#capraz).
+
+## Başlıklı Şekiller ve Tablolar 
+
+- Şekil ve Tablo oluşturmak için `figure` ve `table` ortamları kullanılabilir.
+
+- Şekil örneği: 
+
+```{r nice-fig, fig.cap='Örnek Şekil', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+
+- Şekillere referans vermek için `fig:` öneki kullanılabilir, örneğin yukarıdaki şekle referans vermek için: bkz. Şekil (\@ref(fig:nice-fig)). 
+
+- Tablo örneği: 
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(mtcars[,1:5], 10), caption = 'Örnek Tablo',
+  booktabs = TRUE
+)
+```
+
+- Tabloya referans vermek için: bkz. Tablo (\@ref(tab:nice-tab)).  
+
+

@@ -1,0 +1,30 @@
+# Bloklar
+
+## Denklemler
+
+Bir denklem örneği: 
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+
+Denkleme çapraz referans vermek için: `\@ref(eq:binom)`, Örneğin, bkz. Denklem \@ref(eq:binom).
+
+
+## Teoremler ve kanıtlar
+
+Etiketlenmiş teoremlere metin içinde çapraz referans vermek için `\@ref(thm:tri)` kullanılabilir, örneğin, bkz. Teorem \@ref(thm:tri).
+
+::: {.theorem #tri}
+Bir dik üçgen için, $c$ hipotenüs ve $a$ ve $b$ diğer kenarlar olmak üzere  
+$$a^2 + b^2 = c^2$$
+sağlanır. 
+:::
+
+Daha fazla detay için bkz. <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
+
+## Callout blocks
+
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html

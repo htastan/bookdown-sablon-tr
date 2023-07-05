@@ -1,0 +1,14 @@
+# (PART\*) KISIM BAŞLIĞI {-}
+# Kısımlar
+
+Kitabı bazı bölümleri bir araya getirerek kısımlara ayırabiliriz. Kısım bilgisini .Rmd dosyasının en başında, birinci seviye bölüm başlığından önce belirtebiliriz. 
+
+
+Numaralı kısım ekleme: `# (PART) Birinci Sahne {-}` (izleyen satırda `# Bölüm Başlığı`)
+
+Numarasız kısım: `# (PART\*) Birinci Sahne {-}` (izleyen satırda `# Bölüm Başlığı`)
+
+EK (appendix) ekleme: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
+
+
+

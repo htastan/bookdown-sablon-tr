@@ -4,19 +4,65 @@ author: "Hüseyin Taştan"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography:
-- book.bib
-- packages.bib
+bibliography: [book.bib, packages.bib] 
 biblio-style: apalike
-reference-section-title: Kaynaklar
 link-citations: yes
+reference-section-title: Kaynaklar
 github-repo: htastan/bookdown-sablon-tr
 url: ' '
 description: " "
 ---
 
-# Amaç {-} 
+
+# Önsöz {-} 
 
 - Bu metnin amacı Yihui Xie tarafından geliştirilen `{bookdown}` paketinin bir Türkçe minimal şablonunu oluşturmaktır. 
 
-- Ana hatlarıyla Xie'nin [A Minimal Book Example](https://bookdown.org/yihui/bookdown-demo/methods.html) örneği baz alınmıştır. 
+- Ana hatlarıyla Xie'nin [A Minimal Book Example](https://bookdown.org/yihui/bookdown-demo/methods.html) örneği baz alınmıştır.
+
+- Bookdown kullanım klavuzu için bkz. [https://pkgs.rstudio.com/bookdown/articles/bookdown.html](https://pkgs.rstudio.com/bookdown/articles/bookdown.html)
+
+- Bookdown github sayfası: [https://github.com/rstudio/bookdown](https://github.com/rstudio/bookdown)
+
+- Ayrıca bkz: [https://bookdown.org/yihui/bookdown/](https://bookdown.org/yihui/bookdown/)
+
+
+## Kullanım {-} 
+
+-  **bookdown**'daki her bölüm ayrı bir .Rmd olarak saklanır.
+
+- Her **bookdown** projesi bir `index.Rmd` dosyası içermelidir. Bu aynı zamanda ilk bölümdür. Kitap html formunda yayınlandığında websitesinin anasayfası olacaktır.  
+
+## Kitabın oluşturulması/inşası {-} 
+
+Kitap HTML, pdf, ve epub formlarında oluşturulabilir.  Bunun için `bookdown::render_book()` komutu kullanılabilir. 
+
+1. RStudio IDE **Build** butonu ile  
+
+1. **Build Book**, ve çıktı formatı seçilebilir, örneğin "All formats" seçilirse tüm formlarda kitap inşa edilir. 
+
+Alternatif olarak R console üzerinde aşağıdaki komut çalıştırılabilir:
+
+```{r, eval=FALSE}
+bookdown::render_book()
+```
+
+Kitabın PDF, `bookdown::pdf_book`, olarak inşası için XeLaTeX paketinin yüklenmesi gerekir. XeLaTeX paketini de içeren TinyTeX paketinin yüklenmesi önerilir: <https://yihui.org/tinytex/>.
+
+## Kitabın gözden geçirilmesi {-} 
+
+Kitabın çeşitli aşamalarda gözden geçirilmesi gerekecektir. Bunun için HTML versiyonunu güncellemek gerekir. Bu amaçla RStudio add-in "Preview book" kullanılabileceği gibi R console üzerinden 
+
+```{r eval=FALSE}
+bookdown::serve_book()
+```
+
+çalıştırılabilir. 
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
