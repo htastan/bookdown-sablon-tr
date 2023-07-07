@@ -24,7 +24,7 @@ sağlanır.
 
 Daha fazla detay için bkz. <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
 
-## Callout blocks
+## Özel bloklar
 
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
+Kendi bloklarınızı tanımlamak için bkz.: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html

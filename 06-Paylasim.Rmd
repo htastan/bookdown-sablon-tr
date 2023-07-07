@@ -8,21 +8,15 @@ HTML kitapları internette yayımlanabilir. Detaylar için bkz.: https://bookdow
 
 Sayfa bulunamazsa kullanıcılar otomatik olarak 404 sayfasına yönlendirilir. Bu sayfa istenirse değiştirilebilir. Bunun için bir `_404.Rmd` ya da  `_404.md` dosyası oluşturularak proje dosyası içinde saklanmalıdır.  
 
-## Metadata for sharing
+## Metadata 
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+Bookdown HTML kitap formatı Twitter, Facebook, ve LinkedIn gibi sosyal medya ortamlarında paylaşım için gereken bilgiyi sağlayabilir. Bunun için `index.Rmd` dosyasının başında yer alan YAML alanında gereken bilgilerin girilmesi yeterlidir.
 
-
-
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
-
-Read more about the features of this output format here:
+Daha fazla detay için bkz.: 
 
 https://pkgs.rstudio.com/bookdown/reference/gitbook.html
 
-Or use:
+ya da help dosyasını inceleyiniz: 
 
 ```{r eval=FALSE}
 ?bookdown::gitbook

@@ -9,8 +9,8 @@ bookdown::gitbook:
         <li><a href="./">Bookdown ile Türkçe Kitap Şablonu</a></li>
         <li><a href="https://github.com/htastan">Hüseyin Taştan</a></li>
       after: |
-        <li><a href="" target="blank">Bookdown ile Türkçe Kitap Şablonu</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+        <li><a href="https://github.com/htastan/bookdown-sablon-tr" target="blank">Bookdown ile Türkçe Kitap Şablonu</a></li>
+    edit:
 #    download: ["pdf", "epub"]
     download: no
     fontsettings:

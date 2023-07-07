@@ -14,10 +14,10 @@ referanslar
 bloklar
 denklemler
 teoremler-ve-kanıtlar
-callout-blocks
+özel-bloklar
 kitabın-paylaşımı
 internette-yayımlama
 sayfaları
-metadata-for-sharing
+metadata
 bazı-konuların-gözden-geçirilmesi
-ek-tablo-ve-grafikler
+detaylı-tablo-ve-grafikler

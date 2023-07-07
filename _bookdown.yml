@@ -3,8 +3,8 @@ delete_merged_file: true
 repo: https://github.com/htastan/bookdown-sablon-tr
 output_dir: docs
 rmd_files: ["index.Rmd", "01-Giris.Rmd", "02-Capraz-refs.Rmd", "03-Kisimlar.Rmd",
-"04-Referanslar.Rmd", "05-Bloklar.Rmd", "06-Paylasim.Rmd", "07-Kaynaklar.Rmd",
-"08-Ek.Rmd"]
+"04-Referanslar.Rmd", "05-Bloklar.Rmd", "06-Paylasim.Rmd", "07-Ek.Rmd",
+"08-Kaynaklar.Rmd"]
 language:
   label:
     fig: 'Şekil '

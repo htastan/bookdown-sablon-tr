@@ -8,4 +8,4 @@ Dipnotlar `^[]` ile köşeli parantezlerin içine yazılabilir. Örneğin ^[Bu b
 
 Bibliyografya dosyasındaki kaynaklara metin içinde `@key` ile referans verilebilir. Bu kaynaklar uzantısı .bib olan dosyalarda saklanmalıdır. 
 
-<!-- Örnek: **bookdown** paketi [@R-bookdown], R Markdown ve **knitr** [@xie2015] paketlerini kullanır. Bu referansları içeren `.bib` dosyaları `index.Rmd` dosyasında `bibliography: [book.bib, packages.bib]` satırında belirtilmelidir. -->
+Örnek: **bookdown** paketi [@R-bookdown], R Markdown ve **knitr** [@xie2015] paketlerini kullanır. Bu referansları içeren `.bib` dosyaları `index.Rmd` dosyasında `bibliography: [book.bib, packages.bib]` satırında belirtilmelidir.
